@@ -1,0 +1,100 @@
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+
+  --Verypalblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+  --fw-small: 500;
+  --fw-med: 700;
+  --fw-lrg: 900;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  max-width: 1440px;
+  background-color: var(--Paleblue);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+}
+p {
+  color: var(--Desaturatedblue);
+  line-height: 1.5;
+}
+h1 {
+  color: var(--Darkblue);
+  font-weight: var(--fw-lrg);
+}
+
+.wrapper {
+  background-color: white;
+  max-width: 400px;
+  margin: 10% auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.container {
+  text-align: center;
+  padding: 12px 30px;
+}
+.container p {
+  padding-bottom: 16px;
+}
+.plan-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px;
+  background-color: var(--Verypalblue);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.plan-box img {
+  width: 40;
+  height: 40px;
+}
+.col__left {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+.plan-box-info p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.plan-box-info p:nth-child(1) {
+  color: black;
+  font-weight: var(--fw-lrg);
+}
+.plan-box-info p:nth-child(2) {
+  opacity: 0.75;
+}
+.col__right p {
+  color: var(--Brightblue);
+  text-decoration: underline;
+  padding-top: 8px;
+}
+
+.btn {
+  background-color: var(--Brightblue);
+  width: 100%;
+  padding-block: 16px;
+  color: var(--Verypalblue);
+  font-weight: var(--fw-med);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.507);
+}
+.container p {
+  font-weight: var(--fw-med);
+}
